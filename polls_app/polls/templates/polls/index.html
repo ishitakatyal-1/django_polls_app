@@ -1,0 +1,10 @@
+{% if ques_list %}
+    <ul>
+        {% for i in ques_list %}
+        <li>
+            <a href="/polls/detail/{{i.id}}/">{{i.ques}}</a>
+            <!-- <a href="{% url 'detail' i.id %}">{{i.ques}}</a> -->
+        </li>
+        {% endfor %}
+    </ul>
+{% endif %}
